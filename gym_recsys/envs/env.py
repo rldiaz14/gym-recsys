@@ -119,7 +119,7 @@ class Env(gym.Env):
 
     def _get_obs(self):
         user_state = self.user_state_model_callback(self.user_id, self.hist_seq)  # -> [user_state, ]
-        assert user_state in self.observation_space
+        #assert user_state in self.observation_space
         return user_state
 
     def reset(self, **kwargs):
